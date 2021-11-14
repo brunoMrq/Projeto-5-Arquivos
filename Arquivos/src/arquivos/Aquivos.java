@@ -31,7 +31,8 @@ public class Aquivos {
 		pessoas.add(pessoa2);
 		pessoas.add(pessoa3);
 		
-		File arquivo = new File("C:\\workspace-curso-java\\Arquivos\\src\\arquivos\\arquivo.txt");
+		// Para criar um arquivo .txt basta mudar o final do nome do arquivo
+		File arquivo = new File("C:\\Users\\bruno\\git\\repository5\\Arquivos\\src\\arquivos\\arquivo.csv");
 		
 		if (!arquivo.exists()) {
 			arquivo.createNewFile();
@@ -45,6 +46,8 @@ public class Aquivos {
 		
 		escrever_no_arquivo.flush();
 		escrever_no_arquivo.close();
+	
+		System.out.println("Arquivo Criado");
 	}
 
 }

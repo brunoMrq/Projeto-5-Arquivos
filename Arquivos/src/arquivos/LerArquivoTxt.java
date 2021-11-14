@@ -12,7 +12,9 @@ public class LerArquivoTxt {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		FileInputStream entradaArquivo = 
-				new FileInputStream(new File("C:\\workspace-curso-java\\Arquivos\\src\\arquivos\\arquivo.txt"));
+				// Para ler outro tipo de arquivo basta mudar o caminho
+				new FileInputStream(new File("C:\\Users\\bruno\\git\\repository5\\Arquivos\\src\\arquivos\\arquivo.csv"));
+				
 		Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
 		
 		List<Pessoa> pessoas = new ArrayList<Pessoa>();
